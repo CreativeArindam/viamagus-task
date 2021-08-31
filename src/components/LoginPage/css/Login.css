@@ -1,0 +1,140 @@
+.login__page .banner__image{
+    height: 263px;
+    background-image: url(../icons/banner.png);
+    background-size: cover;
+}
+
+.login__page .login__card{
+    margin: auto;
+    width: 577px;
+    border-radius: 6px;
+    /* padding: 96px; */
+    background: var(--background-color);
+    transform: translateY(-180px);
+    z-index: 2;
+}
+.login__page .login__card__top{
+    padding: 13px;
+    box-shadow : 0px 3px 7px #00000029;
+}
+.login__page .login__card .top__logo{
+    display: block;
+    height: 32px;
+    margin: auto;
+}
+.login__page .login__title{
+    font-weight: 500;
+    color: var(--primary-color);
+    text-align: center;
+    font-size: 29px;
+}
+.login__page .tree__image{
+    width: 385px;
+    display: block;
+    margin: 1rem auto;
+}
+
+.login__page .login__form{
+    width: 385px;
+    margin: 1rem auto;
+}
+
+.login__page .login__form input[type="text"],
+.login__page .login__form input[type="password"]{
+
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid var(--primary-color);
+    margin: 0.8rem auto;
+    padding: 0;
+    padding-bottom: 7px;
+    font-weight: 600;
+}
+
+.login__page .login__form input[type="text"]:focus,
+.login__page .login__form input[type="password"]:focus{
+
+    outline: none;
+}
+
+.login__page .login__form input[type="text"]::placeholder,
+.login__page .login__form input[type="password"]::placeholder{
+
+    font-weight: 600;
+    color: var(--primary-color);
+}
+
+.signin__btn{
+    border: none;
+    background-color: var(--primary-color);
+    color: var(--background-color);
+    font-size: 19px;
+    padding: 0.8rem;
+    width: 100%;
+    text-align: center;
+    border-radius: 15rem;
+    margin: 1rem 0;
+    cursor: pointer;
+}
+
+.login__page .other__btns{
+    width: 385px;
+    font-weight: 600;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.login__page .other__btns .signup__btn{
+    color: var(--error-color);
+}
+
+.orText{
+    text-align: center;
+    margin: 1.5rem;
+    font-weight: 600;
+}
+
+.login__page .tpl__btn{
+    display: flex;
+    align-items: center;
+    width: 385px;
+    margin: 1rem auto;
+    padding: 5px;
+    border-radius: 5px;
+    color: var(--background-color)
+}
+
+.google__btn{
+    background-color: #4285F4;
+}
+
+.fb__btn{
+    background-color: #1877F2;
+}
+
+.login__page .tpl__btn .tpl__icon{
+    height: 36px
+}
+
+.login__page .tpl__btn .tpl__text{
+    flex: 1;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+@media screen and (max-width: 600px) {
+    .login__page .login__card{
+        width: 97vw;
+    }
+}
+
+@media screen and (max-width: 438px) {
+    .login__page .tree__image,
+    .login__page .login__form,
+    .login__page .other__btns,
+    .login__page .tpl__btn{
+        width: 300px;
+    }
+}

@@ -1,0 +1,17 @@
+.date__page .date__form{
+    width: 40vw;
+    margin: 2rem auto;
+}
+.date__page .date__form input{
+    display: block;
+    margin-bottom: 1rem;
+    width: calc(100% - 0.4rem);
+    border: 1px solid black;
+    padding: 0.2rem
+}
+
+@media screen and (max-width: 768px){
+    .date__page .date__form{
+        width: 90vw;
+    }
+}

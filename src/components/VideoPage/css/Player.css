@@ -1,12 +1,11 @@
 .video__page .player__container{
-    margin: 2rem;
+    margin: 2rem auto;
     position: relative;
+    width: 720px;
+    height: 360px;
 }
 
 .video__page .video__player{
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
     cursor: pointer;
 }
 
@@ -19,4 +18,12 @@
     position: absolute;
     bottom: 1rem;
     right: 1rem;
+}
+
+@media screen and (max-width: 768px){
+    .video__page .player__container{
+        padding: 1rem 0;
+        width: 95vw;
+        height: 60vw;
+    }
 }

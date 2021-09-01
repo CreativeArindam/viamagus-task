@@ -1,0 +1,22 @@
+.video__page .player__container{
+    margin: 2rem;
+    position: relative;
+}
+
+.video__page .video__player{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    cursor: pointer;
+}
+
+.video__page .video__player:hover::after{
+    content: "";
+    height: 1rem;
+    width: 1rem;
+    clip-path: circle();
+    background: yellow;
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
+}

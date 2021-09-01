@@ -39,13 +39,29 @@
     margin: 1rem auto;
 }
 
+.login__page .login__form .input__group{
+    margin: 0.6rem auto;
+}
+
+.login__page .login__form .input__group .input__error{
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--error-color);
+    display: flex;
+    align-items: center;
+}
+
+.login__page .login__form .input__group .input__error > img{
+    height: 1rem;
+    margin-right: 0.2rem;
+}
+
 .login__page .login__form input[type="text"],
 .login__page .login__form input[type="password"]{
-
     width: 100%;
     border: none;
     border-bottom: 1px solid var(--primary-color);
-    margin: 0.8rem auto;
+    margin: 0.4rem auto;
     padding: 0;
     padding-bottom: 7px;
     font-weight: 600;
@@ -53,7 +69,6 @@
 
 .login__page .login__form input[type="text"]:focus,
 .login__page .login__form input[type="password"]:focus{
-
     outline: none;
 }
 
@@ -88,6 +103,11 @@
 
 .login__page .other__btns .signup__btn{
     color: var(--error-color);
+    cursor: pointer;
+}
+
+.login__page .other__btns .forgot__pass__btn{
+    cursor: pointer;
 }
 
 .orText{
@@ -103,7 +123,8 @@
     margin: 1rem auto;
     padding: 5px;
     border-radius: 5px;
-    color: var(--background-color)
+    color: var(--background-color);
+    cursor: pointer;
 }
 
 .google__btn{
@@ -136,5 +157,14 @@
     .login__page .other__btns,
     .login__page .tpl__btn{
         width: 300px;
+    }
+}
+
+@media screen and (max-width: 316px) {
+    .login__page .tree__image,
+    .login__page .login__form,
+    .login__page .other__btns,
+    .login__page .tpl__btn{
+        width: 95vw;
     }
 }
